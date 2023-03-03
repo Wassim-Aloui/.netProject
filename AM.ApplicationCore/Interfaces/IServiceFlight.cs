@@ -24,5 +24,6 @@ namespace AM.ApplicationCore.Interfaces
         public IList<Traveller> SenioTravellers(Flight flight);
 
         public IList<IGrouping<string, Flight>> DestinationGroupedFlight();
-     
+
+    }
 }

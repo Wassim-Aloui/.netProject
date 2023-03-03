@@ -61,7 +61,7 @@ Passanger pass1 = new Passanger
 
 };
 
-Console.WriteLine(pass1.CheckProfil("aloui", "wassim"));
+//Console.WriteLine(pass1.CheckProfil("aloui", "wassim"));
 pass1.PassangerType();
 Staff stf = new Staff();
 stf.PassangerType();
@@ -107,6 +107,19 @@ service.GetFlights("Paris",
 
      flight.EstimatedDuration == int.Parse(a)
 );
+
+int x = 45; 
+
+Console.WriteLine(x.Add(5));
+
+Passanger p = new Passanger()
+{
+    LastName = "hello",
+    FirstName = "hello"
+};
+
+p.UpperFullName();
+Console.WriteLine(p);
 
 
 

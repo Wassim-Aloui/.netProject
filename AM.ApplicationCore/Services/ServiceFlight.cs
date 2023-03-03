@@ -161,12 +161,26 @@ namespace AM.ApplicationCore.Services
         }
 
         Action<Plane> FlightDetailsDel;
+
         Func<string, double> DurationAverageDel;
         public ServiceFlight()
         {
-          
+            FlightDetailsDel =  plane => 
+            {
+                var req = Flights
+                    .Where(f => f.plane == plane)
+                    .Select(f => new { f.FlightDate, f.Destination });
+                foreach (var item in req)
+                {
+                    Console.WriteLine(item.Destination + "" + item.FlightDate);
+                }
+
+            };
+       
+        DurationAverageDel = destination=>
+            (from f in Flights
+                        where f.Destination == destination
+                         select f.EstimatedDuration).Average();
         }
-
-
-    }   
     }
+}
