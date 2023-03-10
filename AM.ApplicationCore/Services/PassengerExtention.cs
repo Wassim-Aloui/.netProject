@@ -9,9 +9,9 @@ namespace AM.ApplicationCore.Services
 {
     public static class PassengerExtention  
     {
-      public static  void  UpperFullName(this Passanger passenger) {
+     /* public static  void  UpperFullName(this Passanger passenger) {
            passenger.FirstName= passenger.FirstName[0].ToString().ToUpper() + passenger.FirstName.Substring(1);
             passenger.LastName = passenger.LastName[0].ToString().ToUpper() + passenger.LastName.Substring(1);
-        }
+        }*/
     }
 }

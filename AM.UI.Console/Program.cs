@@ -54,9 +54,9 @@ Plane p3 = new Plane()
 Console.WriteLine(p3.ToString());
 Passanger pass1 = new Passanger
 {
-    FirstName = "aloui",
+   /* FirstName = "aloui",
     LastName = "wassim",
-    EmailAddress = "wassim@esprit.tn"
+    EmailAddress = "wassim@esprit.tn"*/
 
 
 };
@@ -112,14 +112,14 @@ int x = 45;
 
 Console.WriteLine(x.Add(5));
 
-Passanger p = new Passanger()
+/*Passanger p = new Passanger()
 {
     LastName = "hello",
     FirstName = "hello"
-};
+};*/
 
-p.UpperFullName();
-Console.WriteLine(p);
+//p.UpperFullName();
+//Console.WriteLine(p);
 
 
 
